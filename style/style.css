@@ -1,3 +1,365 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: demo;
+    src: url("../assets/text/WorkSans-VariableFont_wght.ttf");
 }
+
+@font-face {
+    font-family: demo_bold;
+    src: url("../assets/text/Work_Sans/static/WorkSans-Black.ttf");
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/* ANCHOR Nav */
+.sec_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8px 0;
+    border-bottom: 3px solid #3BD100;
+}
+
+.pri_nav {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+.pri_nav ul{
+    display: flex;
+}
+
+.pri_nav ul li {
+    margin-right: 20px;
+}
+
+.pri_nav ul li:first-child {
+    margin-left: 210px;
+}
+
+header a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header a:hover {
+    color: 3px solid #3BD100;
+}
+
+/* ANCHOR First Image Banner */
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.banner figure {
+    position:relative ;
+}
+
+.banner figcaption {
+    font-size: 30px;
+    line-height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+    color: aliceblue;
+    font-weight: 900;
+    max-width: 510px;
+    text-align: center;
+    padding: 50px 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.category figure {
+    position: relative;
+    margin: 20px 10px;
+    width: 33.33%;
+    background: #eaeee8;
+    padding-left: 13%;
+    height: 280px;
+}
+
+.category figcaption {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translate(40%, 130%);
+}
+
+/* ANCHOR Category */
+.category {
+    display: flex;
+    max-width: 100%;
+    margin: 0px 40px;
+}
+
+.first_content {
+    font-size: 13px;
+    line-height: 30px;
+    font-family: Reboto , sans-serif;
+}
+
+.second_content {
+    color: #3BD100;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+/* ANCHOR Main Page */
+h1 {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 30px;
+    padding: 5px 5px;
+    font-family: demo, sans-serif;  
+    width: 100%;  
+    margin: 50px 0px 20px 0px;
+    border-bottom: #3BD100;
+}
+
+p {
+    text-align: center;
+    max-width: 100%;
+    margin: 30px 300px;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.border_line {
+    border-bottom: 3px solid #3BD100;
+    margin-top: 50px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.first_row {
+    display: flex;
+    max-width: 100%;
+    margin: 10px 200px;
+}
+
+.first_row figure {
+    width: 25%;
+    padding-left: 2.7%;
+    margin-right: 5px;
+    display: block;
+    height: 330px;
+    border: 1px solid #faf5f5;
+    position: relative;
+}
+
+.first_row figcaption {
+    padding-top: 20px;
+}
+
+.first_div {
+    font-family: demo sans-serif;
+    font-weight: 800;
+    line-height: 30px;
+}
+
+.second_div {
+    font-family: Roboto sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.second_row figure {
+    width: 25%;
+    padding-left: 2.7%;
+    margin-right: 5px;
+    display: block;
+    height: 330px;
+    border: 1px solid #faf5f5;
+    position: relative;
+    margin-top: 0px;
+}
+
+.second_row {
+    display: flex;
+    max-width: 100%;
+    margin: 10px 200px;
+}
+
+.third_row {
+    display: flex;
+    max-width: 100%;
+    margin: 10px 200px;
+}
+
+.third_row figure {
+    width: 25%;
+    padding-left: 2.7%;
+    margin-right: 5px;
+    display: block;
+    height: 330px;
+    border: 1px solid #faf5f5;
+    position: relative;
+    margin-top: 0px;
+}
+
+.fourth_row {
+    display: flex;
+    max-width: 100%;
+    margin: 10px 200px;
+}
+
+.fourth_row figure {
+    width: 25%;
+    padding-left: 2.7%;
+    margin-right: 5px;
+    display: block;
+    height: 330px;
+    border: 1px solid #faf5f5;
+    position: relative;
+    margin-top: 0px;
+}
+
+/* Button */
+button {
+    padding: 8px 20px;
+    /* text-align: center;
+    display: inline-block;
+    width: 200px; */
+    margin: 0 auto;
+    display: flex;
+    font: bold 15px;
+    font-weight: 900;
+    margin-bottom: 20px
+} 
+
+/* ANCHOR Delivery Sevice */
+.delivery_div {
+    background: #103502;
+    padding: 50px 10px;
+    text-align: center;
+    font-family: demo;
+    font-size: 32px;
+    color: #fff;
+    font-weight: 900;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.pay_dev {
+    display: flex;
+    max-width: 100%;
+    margin: 10px 200px;
+}
+
+.pay_dev figure {
+    width: 33.33%;
+    padding-left: 2.7%;
+    margin-right: 5px;
+    display: block;
+    height: 250px;
+    border: 1px solid #faf5f5;
+    position: relative;
+    margin-top: 0px;
+}
+
+.pay_dev img {
+    background: #3BD100;
+    border-radius: 50px;
+    margin: 20px 0px;
+    height: 60px;
+    padding: 0px;
+    width: 60px;
+}
+
+.first_div_icon {
+    font-family: demo sans-serif;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.second_div_icon {
+    font-family: Roboto sans-serif;
+    font-size: 15px;
+    color: #c6d8bd;
+}
+
+/* ANCHOR Footer */
+footer {
+    background: chocolate;
+    /* width: 1400px; */
+    height: 200px;
+    display: flex;
+    padding: 50px 60px;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+}
+
+footer div {
+    font-family: demo_bold sans-serif;
+    font-weight: 900;
+    color: #fff;
+    line-height: 50px;
+}
+
+footer td,li {
+    font-family: Roboto sans-serif;
+    font-size: 15px;
+    color: #fff;
+    line-height: 20px;
+}
+
+footer .first_sec {
+    padding-right: 20px;
+}
+
+footer section {
+    width: 400px;
+}
+
+footer .visa_img {
+    width: 250px;
+    height: 44px;
+    background: #000000;
+}
+
+footer .second_sec {
+    padding-right: 20px;
+}
+
+footer figure {
+    width: 400px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer .foot_copy {
+    position: absolute;
+    transform: translate(5% ,400%);
+    font-family: Roboto ,sans-serif;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
